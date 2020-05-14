@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string tast;
+
+            do
+            {
+
+                Console.WriteLine("Tryk på 1 for areal af cirkel");
+                Console.WriteLine("Tryk på 2 for areal af rektangel");
+                Console.WriteLine("Tryk på 3 for areal af retvinklet trekant");
+                Console.WriteLine("Tryk på q for at slutte");
+
+                ConsoleKeyInfo svar = Console.ReadKey();
+                tast = svar.KeyChar.ToString();
+
+                switch (tast)
+                {
+                    case "1":
+                        Console.WriteLine("\nDu valgte cirkelberegning");
+                        Console.WriteLine("\nIndtast radius i centimeter, og afslut med ENTER: ");
+                        double radius_cirkel = Convert.ToDouble(Console.ReadLine());
+                        double areal_cirkel = 3.1415 * (radius_cirkel * radius_cirkel);
+
+                        Console.WriteLine("\nArealet af cirklen er beregnet til {0} cm²", areal_cirkel);
+
+                        break;
+                    case "2":
+                        Console.WriteLine("\nDu valgte beregning af rektangel");
+                        Console.WriteLine("\nIndtast længden i cm, og afslut med ENTER: ");
+                        double længde_rektangel = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("\nIndtast bredden i cm, og afslut med ENTER: ");
+                        double bredde_rektangel = Convert.ToDouble(Console.ReadLine());
+
+                        double areal_rektangel = længde_rektangel * bredde_rektangel;
+
+                        Console.WriteLine("\nArealet af rektanglet er beregnet til {0} cm²", areal_rektangel);
+
+                        break;
+                    case "3":
+                        Console.WriteLine("\nDu valgte retvinklet trekant");
+                        Console.WriteLine("\nIndtast højden af trekanten i cm, og afslut med ENTER: ");
+                        double højde_trekant = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("\nIndtast grundlinjen i cm, og afslut med ENTER: ");
+                        double grundlinje_trekant = Convert.ToDouble(Console.ReadLine());
+
+                        double areal_trekant = 0.5 * højde_trekant * grundlinje_trekant;
+
+                        Console.WriteLine("\nArealet af trekanten er beregnet til {0} cm²", areal_trekant);
+
+                        break;
+                    case "q":
+                        Console.WriteLine("\nDu valgte at slutte");
+
+                        break;
+                    default:
+                        Console.WriteLine("\nTast ikke anvendelig");
+
+                        break;
+
+                }
+
+                Thread.Sleep(2000);
+            } while (tast != "q");
+        }
+    }
+}
