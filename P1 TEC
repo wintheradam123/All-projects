@@ -51,7 +51,7 @@ namespace ConsoleApp1
 				Console.WriteLine("Indtast radiusen af din cirkel");
 				Double Radius = Console.Read();
 
-				Double Areal = (3.14 * Radius);
+				Double Areal = (3.14 * (Radius*Radius));
 				Console.WriteLine(Areal);
 				
 				Console.WriteLine("Indtast dit navn: ");
