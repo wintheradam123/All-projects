@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace ConsoleApp1
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			
+			{
+				
+				
+				
+				
+
+
+				
+				int aa = 2 + 1 * 2;
+				int ab = (2 + 1) * 2;
+				int ac = 5 / 2;
+				int ad = 3 * 8 / 100;
+				int ae = 1 - 5;
+				
+				Console.WriteLine("{0}, {1}, {2}, {3}, {4}", aa, ab, ac, ad, ae);
+
+				/*Double Number = 200.50;
+				String Har = "Jeg har ";
+				String Bank = " kr. i banken";
+
+				Console.WriteLine(Har + Number + Bank);
+
+				String Dato = "I dag har vi den 24. December";
+				Console.WriteLine(Dato);
+
+				int a = 2;
+				String b = "4";
+				Double c = 3.3;
+
+				a = 6;
+			
+				Console.WriteLine(a);
+				Console.WriteLine(b);
+				Console.WriteLine(c);
+
+
+				
+				Console.WriteLine("Indtast radiusen af din cirkel");
+				Double Radius = Console.Read();
+
+				Double Areal = (3.14 * Radius);
+				Console.WriteLine(Areal);
+				
+				Console.WriteLine("Indtast dit navn: ");
+				String Navn = Console.ReadLine();
+				Console.WriteLine("Indtast din alder: ");
+				String Alder = Console.ReadLine();
+
+				Console.WriteLine("Jeg hedder "+Navn+ " og er "+Alder+ " år gammel");
+				
+				Double Kage = 23.56;
+				Double Øl = 34.7;
+				Double Pølse = 65.34;
+				Double Ialt = Kage + Øl + Pølse;
+
+				Console.WriteLine("Kage		" + Kage);
+				Console.WriteLine("Øl		" + Øl);
+				Console.WriteLine("Pølse		" + Pølse);
+				Console.WriteLine("I alt "+Ialt +		"	Beregning= 23.56 + 34.7 + 65.34");
+				
+				String Navn1 = "Søren";
+				String Alder1 = "16";
+				String Penge = "1234,34";
+
+				Console.WriteLine("Jeg hedder " + Navn1+ ", er " + Alder1+ " og jeg har tjent " + Penge+ " kr. på at lappe cykler.");
+				
+
+	*/
+
+
+
+
+				Console.ReadKey();
+			}
+			
+
+			
+			
+		}
+	}
+}
