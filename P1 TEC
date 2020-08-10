@@ -12,22 +12,78 @@ namespace ConsoleApp1
 		{
 			
 			{
-				
-				
-				
-				
+				Console.WriteLine("Indtast din alder: ");
+				int alder3 = Convert.ToInt32(Console.ReadLine());
+				if (alder3 <= 60)
+				{
+					Console.WriteLine("Du er ikke for gammel");
+				}
+				else
+				{
+					Console.WriteLine("Du er for gammel");
+				}
 
 
+				/*
+				Console.WriteLine("Indtast din alder: ");
+				int alder2 = Convert.ToInt32(Console.ReadLine());
+				if (alder2 <= 57)
+				{
+					Console.WriteLine("Du er ikke for gammel");
+				}
+				else
+				{
+					Console.WriteLine("Du er for gammel");
+				}
+
+				int tal1 = 42;
+				int tal2 = 64;
+				int result2 = tal1 + tal2;
+				if (result2 > 100)
 				
+				{
+					Console.WriteLine("Summen er større end 100!");
+				}
+				if (result2 < 100)
+				{
+					Console.WriteLine("Summen er mindre end 100");
+				}
+				if (result2 == 100)
+				{
+					Console.WriteLine("Summen er 100");
+				int Vural = 8;
+				int Emil = 234;
+				int Adam = 12;
+				int result1;
+				Console.WriteLine("{0}{1}{2}", Vural, Emil, Adam);
+				int i = 21;
+				int ii = 84;
+				int iii = 4;
+				int result;
+				result = i + ii * iii;
+				Console.WriteLine(result0);
+
+
+				string radius, diameter;
+				double areal, omkreds, radius1, diameter1;
+
+				Console.Clear();
+				Console.Write("Indtast din radius i cm: ");
+				radius = Console.ReadLine();
+				radius1 = double.Parse(radius);
+
+				areal = Math.PI * Math.Pow(radius1, 2);
+				diameter1 = radius1 * 2;
+				omkreds = Math.PI * diameter1;
+				Console.WriteLine("Når radius er {0:N2} cm, er omkredsen {1:N2} cm og arealet er {2:N2} cm²", radius1, omkreds, areal);
 				int aa = 2 + 1 * 2;
 				int ab = (2 + 1) * 2;
 				int ac = 5 / 2;
 				int ad = 3 * 8 / 100;
 				int ae = 1 - 5;
-				
-				Console.WriteLine("{0}, {1}, {2}, {3}, {4}", aa, ab, ac, ad, ae);
 
-				/*Double Number = 200.50;
+				Console.WriteLine("{0}, {1}, {2}, {3}, {4}", aa, ab, ac, ad, ae);
+				Double Number = 200.50;
 				String Har = "Jeg har ";
 				String Bank = " kr. i banken";
 
@@ -41,26 +97,22 @@ namespace ConsoleApp1
 				Double c = 3.3;
 
 				a = 6;
-			
+
 				Console.WriteLine(a);
 				Console.WriteLine(b);
 				Console.WriteLine(c);
 
 
-				
-				Console.WriteLine("Indtast radiusen af din cirkel");
-				Double Radius = Console.Read();
 
-				Double Areal = (3.14 * (Radius*Radius));
-				Console.WriteLine(Areal);
-				
+
+
 				Console.WriteLine("Indtast dit navn: ");
 				String Navn = Console.ReadLine();
 				Console.WriteLine("Indtast din alder: ");
 				String Alder = Console.ReadLine();
 
 				Console.WriteLine("Jeg hedder "+Navn+ " og er "+Alder+ " år gammel");
-				
+
 				Double Kage = 23.56;
 				Double Øl = 34.7;
 				Double Pølse = 65.34;
@@ -70,15 +122,15 @@ namespace ConsoleApp1
 				Console.WriteLine("Øl		" + Øl);
 				Console.WriteLine("Pølse		" + Pølse);
 				Console.WriteLine("I alt "+Ialt +		"	Beregning= 23.56 + 34.7 + 65.34");
-				
+
 				String Navn1 = "Søren";
 				String Alder1 = "16";
 				String Penge = "1234,34";
 
 				Console.WriteLine("Jeg hedder " + Navn1+ ", er " + Alder1+ " og jeg har tjent " + Penge+ " kr. på at lappe cykler.");
-				
 
-	*/
+
+				*/
 
 
 
