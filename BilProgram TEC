@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Bil bil = new Bil();
+            bil.liters = 2.5;
+            bil.isDiesel = true;
+            bil.gas = 1;
+
+            bil.Start();
+            bil.Slut();
+            bil.FillGas();
+            bil.RemainingGas();
+            Console.ReadKey();
+        }
+    }
+     public class Bil
+    {
+        public double liters;
+        public bool isDiesel;
+        public double gas;
+        public void Start ()
+        {
+            Console.WriteLine("Motoren er startet");
+        }
+        public void Slut ()
+        {
+            Console.WriteLine("Moteren er slukket");
+        }
+        public void RemainingGas()
+        {
+            Console.WriteLine("You have {0} liters of gas remaining", gas);
+        }
+        public void FillGas()
+        {
+            if (isDiesel == true)
+            {
+                Console.WriteLine("Filled tank with: {0} liters of diesel.", liters);
+            }
+            else
+            {
+                Console.WriteLine("Filled tank with: {0} liters.", liters);
+            }
+        }
+    }
+}
